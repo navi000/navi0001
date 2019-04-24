@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Log in | Cake Lounge</title>
+	<style type="text/css">
+		
+body{
+
+	background-image: url('login2.jpg');
+   }
+
+
+#area{
+
+margin-top: 90px;
+margin-left: 10px;
+
+	width: 400px;
+	height: 380px;
+	background-color: lightpink;
+text-align: center;
+border-color: transparent;
+border-radius: 25px;
+box-shadow: 2px 5px 5px 5px lightgrey;
+animation: myAnim 2s linear 3s ;
+}
+
+@keyframes myAnim{
+
+from{
+	margin-top: 90px;
+	margin-left: 10px;
+}
+
+to{
+	margin-top: 90px;
+	margin-left: 400px;
+	
+
+}
+}
+label{
+	font-size: 25px;
+	color: white;
+	font-family: cursive;
+}
+
+button{
+
+	padding: 5px 15px;
+	color: black;
+	font-size: 20px;
+	background-color: transparent;
+	border:2px solid white;
+	border-radius: 10px;
+
+}
+
+</style>
+</head>
+<body>
+
+
+<h1 style="float: right; margin-top: -10px; font-size: 15px; color: slateblue; margin-top:-15px;  font-family: cursive;">Doesn't Have Account <a href="signup.htm">Sign Up</a> &nbspHere</h1>
+
+<h1 style="font-size: 50px; font-family: cursive; margin-left: 20px; color: ;">Cake Lounge</h1>
+
+<div id="area">
+<form method="post" action="login.php">
+	<h1>Log in</h1>
+
+	<label>email
+	<br> <input type="email" name="mail" placeholder="Enter Your email here" style="font-size: 15px; font-family: cursive; border:1px solid white; width: 300px; height:35px; border-radius: 10px;" ></label>
+	<br><br>
+	<label> Password <input type="Password" name="pwd" style="font-size: 15px; font-family: cursive; border:1px solid white; width: 300px; height:35px; border-radius: 10px;" placeholder="Enter your password here"></label>
+	<br>
+
+<br>
+	<button> Login</button>
+
+
+
+
+</form>
+
+
+
+
+</div>
+</body>
+</html>

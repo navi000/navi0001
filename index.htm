@@ -1,0 +1,381 @@
+<!Doctype html>
+<html>
+<head>
+	<title>Cake Lounge  |  welcome </title>
+
+<script type="text/javascript" src="index.js" async  defer></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+	 
+<style type="text/css">
+
+
+
+
+
+  
+
+#icons li {
+  display: inline-block;
+  margin-left: 200px;
+  padding: 13px;
+
+
+
+}
+
+
+#main-cake ul{
+  padding: 0px;
+  margin: 0px;
+
+
+
+
+}
+
+#main-cake li{
+
+ display: inline-block;
+
+ margin-left: 120px;
+
+}
+#main-cake input[type=submit]
+{
+
+border-radius: 5px; 
+  padding: 6px;
+  background: #800080;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffc0cb, #800080);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ffc0cb, #800080); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+border:none;
+margin-left: 5px;
+margin-top: 5px;
+}
+
+#cake-prices{
+
+ margin-left: 225px;
+ font-size: 22px;
+
+}
+
+
+</style>
+
+</head>
+<body>
+
+
+
+<form  action="result.php" enctype="multipart/form-data" method="get" >
+	
+	<input type="search" name="search"   placeholder="  Search me....!" style="float: right; margin-top: 65px; margin-right: 85px;  padding: 10px; border-radius: 15px; border:solid 2px black;  font-size: 20px; width: 300px; height: 40px; " />
+
+
+</form>
+<div class="main_wrapper" style="margin-top: -20px;" >
+	
+<div class="logo" >
+<img src="log0.png"  alt="logo"  width="170" height="150"  align="left" style="margin-left: -5px;" >
+</div>
+
+<div class="extra" align="left" >
+
+<span><img src="clock.png" alt="clockimage" style="margin-left: 145px;" >Same Day Delivary </span>
+
+<span><img src="night.png" alt="moonimage" > Mid Night Delivary</span>
+
+<span> <img src="payment.png" alt="payment image"> Secure payment </span>
+
+  </div>
+</div>
+
+<!-- nav bar starts here-->
+
+<div id="menu-bar"  style="background: #fffbd5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #b20a2c, #fffbd5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #b20a2c, #fffbd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+" >
+
+	<ul>
+		
+		<li><a href="index.htm">HOME</a>
+			<li><a href="cakes_display.htm">CAKES</a>
+				<li><a href="#">FlOWERS</a></li>
+				<li><a href="combo_display.htm">COMBOS</a></li>
+				<li><a href="#">ADD-ONS</a></li>
+
+			<div  style="float: right; margin-right: 25px; margin-top: -35px; " >
+					
+					<li style="margin-top: 25px;" ><a href="login.htm" style="font-size: 22px;" > <img src="loginicon.png" width="45" height="45" > </a></li>
+					<li><a href="cart.htm"> <img src="cart1.png" width="30" height="30" style="margin-top:0px;" ></a></li>
+</div>
+
+	</ul>
+	</div>
+</div>
+<!-- Ends here-->
+
+
+<!--slide show starts here-->
+
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  
+  <img src="cake-banner.jpg" height="255" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="flowers-banner.jpg" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <img src="combo-banner.jpg" style="width:100%">
+  
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center; display: none;  ">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+   
+
+
+
+<div id="icons" style="background: #23074d;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #cc5333, #23074d);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #cc5333, #23074d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ margin-top: -15px; "  >
+
+<ul>
+  
+<li><img src="love.png"></li>
+<li><img src="cake.png"></li>
+<li><img src="combo.png"></li>
+<li><img src="birthday.png"></li>
+
+</ul>
+
+
+
+   </div>
+
+
+
+
+<div id="main-cake">
+
+<br>
+
+<hr>
+<br>
+ <ul>
+   
+   <li style="font-size: 35px;  margin-left: 80px; color:purple;" >Cakes</li>
+   
+ <li> <img src="black-forest-oreo-cake.jpg" width="140" height="140" >  </li>
+ <li><img src="choco-almond-cake.jpg" width="140" height="140"  ></li>
+ <li><img src="chocolate-truffle-cake.jpg" width="140" height="140"  ></li>
+ <li style="margin-left: 152px;" ><img src="pineapple-luxury-cake.jpg" width="140" height="140"  ></li>
+
+ </ul>
+
+ <div id="cake-names" >
+<br><br>
+  <ul> 
+  	  
+    <li style="margin-left: 72px; margin-top: -22px; ">  <a href="cakes_display.htm" ><input type="submit" name="submit" style="cursor: pointer;" value="VIEW ALL" ></li></a>
+    <li>Black forest oreo cake</li>
+     <li>Choco almond cake</li>
+       <li>Chocolate truffle cake</li>
+       <li>Pineapple luxury cake</li>
+
+
+  </ul>
+  <br>
+<div id="cake-prices" >
+<ul>
+  <li   >Rs 399</li>
+  <li style="margin-left: 185px;" >Rs 399</li>
+  <li style="margin-left: 185px;" >Rs 399</li>
+  <li style="margin-left: 205px;" >Rs 399</li>
+</ul>
+</div>
+   <hr>
+
+ </div>
+
+  
+
+
+
+
+</div>
+
+
+<div id="main-cake">
+
+<br>
+
+<hr id="line" >
+<br>
+ <ul>
+   
+   <li style="font-size: 25px;  margin-left: 70px; color:purple;" >CAKES<br>
+   	&<br>
+   	FLOWERS
+
+
+     </li>                                                        
+ <li> <img src="flower1.jpg" width="130" height="130" >  </li>
+ <li><img src="flower2.png" width="130" height="130"  ></li>
+ <li><img src="flower3.jpg" width="130" height="130"  ></li>
+ <li style="margin-left: 152px;" ><img src="flower4.jpg" width="130" height="130"  ></li>
+
+ </ul>
+
+ <div id="cake-names" >
+<br><br>
+  <ul> 
+    <li style="margin-left: 72px; margin-top: -22px;" ><a href="combo_display.htm">  <input type="submit" style="cursor: pointer;" name="submit" value="VIEW ALL" ></a></li>
+    <li>Black forest oreo cake</li>
+     <li>Choco almond cake</li>
+       <li>Chocolate truffle cake</li>
+       <li>Pineapple luxury cake</li>
+
+
+  </ul>
+  <br>
+<div id="cake-prices" >
+<ul>
+  <li>399</li>
+  <li style="margin-left: 225px;" >Rs.399</li>
+  <li style="margin-left: 205px;" >Rs.399</li>
+  <li style="margin-left: 205px;" >Rs.399</li>
+</ul>
+</div>
+   <hr id="line">
+
+ </div>
+
+  
+
+
+
+
+</div>
+
+
+<div id="main-cake">
+
+<br>
+/
+<hr id="line" >
+<br>
+ <ul>
+   
+   <li style="font-size: 35px;  margin-left: 80px; color:purple;" >Cakes</li>
+   
+ <li> <img src="black-forest-oreo-cake.jpg" width="140" height="140" >  </li>
+ <li><img src="choco-almond-cake.jpg" width="140" height="140"  ></li>
+ <li><img src="chocolate-truffle-cake.jpg" width="140" height="140"  ></li>
+ <li style="margin-left: 152px;" ><img src="pineapple-luxury-cake.jpg" width="140" height="140"  ></li>
+
+ </ul>
+
+ <div id="cake-names" >
+<br><br>
+  <ul> 
+    <li style="margin-left: 72px; margin-top: -22px;   " ><input type="submit" name="submit" value="VIEW ALL" ></li>
+    <li>Black forest oreo cake</li>
+     <li>Choco almond cake</li>
+       <li>Chocolate truffle cake</li>
+       <li>Pineapple luxury cake</li>
+
+
+  </ul>
+  <br>
+<div id="cake-prices" >
+<ul>
+  <li>399</li>
+  <li style="margin-left: 225px;" > Rs 399</li>
+  <li style="margin-left: 205px;" >Rs 399</li>
+  <li style="margin-left: 205px;" > Rs 399</li>
+</ul>
+</div>
+   <hr id="line" >
+
+ </div>
+
+
+
+
+
+</div>
+
+<div  id="footer" style="background-image: url(footer/1.jpg);" >
+
+<!--<h1 style="position: relative;top: 125px; left: 535px;">Stay With Us</h1>
+-->
+
+<div id="icons"  style="position: relative; top: 150px; left: 240px; margin: 15px;">
+
+	<img src="footer/facebook.png" width="150" height="150">
+	<img src="footer/twitter2.png"  width="120" height="120"  style="margin-left: 55px;">
+	<img src="footer/snapchat.png" width="120" height="120" style="margin-left: 75px;"   >
+	<img src="footer/instagram.png" width="120" height="120" style="margin-left: 75px;">
+
+
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h3 style=" position: relative; float: right; right: 25px;"> Copyrights &copy Cake Lounge-2018</h3>
+
+</body>
+</html>1q
